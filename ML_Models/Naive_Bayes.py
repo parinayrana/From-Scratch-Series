@@ -13,7 +13,8 @@ class NaiveBayes:
         self._priors = np.zeros(n_classes, dtype=np.float64)
 
         for c in self._classes:
-            X_c = X[c==y]
+            X_c = X[y==c]
+            self._mean[c,:] 
 
     def predict(self,X):
         pass
